@@ -11,7 +11,7 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #f0f2f5; /* style Facebook */
+  background: #f0f2f5;
 }
 
 /* TOP BAR */
@@ -31,13 +31,12 @@ body {
   color: #e91e63;
 }
 
-/* MENU 3 POINTS */
 .menu {
   font-size: 22px;
   cursor: pointer;
 }
 
-/* MENU DROPDOWN */
+/* DROPDOWN */
 .dropdown {
   display: none;
   position: absolute;
@@ -46,7 +45,7 @@ body {
   background: white;
   box-shadow: 0 2px 10px rgba(0,0,0,0.2);
   border-radius: 10px;
-  width: 180px;
+  width: 200px;
 }
 
 .dropdown a {
@@ -68,13 +67,14 @@ body {
   padding: 60px 20px;
 }
 
-/* CARDS */
+/* CONTAINER */
 .container {
   max-width: 900px;
   margin: auto;
   padding: 20px;
 }
 
+/* CARD */
 .card {
   background: white;
   margin: 15px 0;
@@ -83,6 +83,7 @@ body {
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
+/* BUTTON */
 .btn {
   display: inline-block;
   padding: 10px 15px;
@@ -105,38 +106,44 @@ body {
   <div class="menu" onclick="toggleMenu()">⋯</div>
 
   <div class="dropdown" id="menu">
-    <a href="#services">Prestations</a>
-    <a href="#contact">Contact</a>
-    <a href="#about">À propos</a>
+    <a href="index.html">Accueil</a>
+    <a href="prestations.html">Prestations</a>
+    <a href="a-propos.html">À propos</a>
+    <a href="rdv.html">Prendre RDV</a>
+    <a href="cadeau.html">Bon cadeau</a>
+    <a href="contact.html">Contact</a>
   </div>
 </div>
 
 <!-- HERO -->
 <div class="hero">
   <h1>Sophie Esthétique à Domicile</h1>
-  <p>Saint-Lô • Cabinet & domicile</p>
+  <p>Saint-Lô • Soins beauté & bien-être</p>
 </div>
 
 <!-- CONTENT -->
 <div class="container">
 
-  <div class="card" id="about">
-    <h2>À propos</h2>
+  <div class="card">
+    <h2>Bienvenue</h2>
     <p>
-      Esthéticienne à domicile à Saint-Lô, Sophie vous propose des soins de beauté
-      personnalisés dans une ambiance douce et professionnelle.
+      Esthéticienne à domicile depuis 2008 à Saint-Lô.
+      Soins personnalisés, détente et bien-être.
     </p>
   </div>
 
-  <div class="card" id="services">
-    <h2>Prestations</h2>
-    <p>💅 Ongles • 💄 Maquillage • ✨ Mariage • ✨ Semi-permanent • ✨ Épilation • 💆 Massage</p>
+  <div class="card">
+    <h2>Accès rapide</h2>
+
+    <a class="btn" href="prestations.html">Prestations</a>
+    <a class="btn" href="rdv.html">Prendre RDV</a>
+    <a class="btn" href="contact.html">Contact</a>
   </div>
 
-  <div class="card" id="contact">
+  <div class="card">
     <h2>Contact</h2>
 
-    <p>📞 0634030123</p>
+    <p>📞 06 34 03 01 23</p>
 
     <a class="btn" href="tel:0634030123">Appeler</a>
     <a class="btn" href="https://instagram.com/sophie_esthetique_domicile">Instagram</a>
@@ -147,11 +154,7 @@ body {
 <script>
 function toggleMenu() {
   var menu = document.getElementById("menu");
-  if(menu.style.display === "block") {
-    menu.style.display = "none";
-  } else {
-    menu.style.display = "block";
-  }
+  menu.style.display = (menu.style.display === "block") ? "none" : "block";
 }
 </script>
 
