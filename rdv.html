@@ -20,13 +20,111 @@
 
     <h1>Prendre rendez-vous</h1>
 
-    <p>Les rendez-vous se prennent uniquement :</p>
+    <p>Les rendez-vous se prennent par téléphone au :</p>
 
     <h2>📞 06 34 03 01 23</h2>
 
     <p>Par SMS ou appel</p>
+<div/>
+
+<div>
+    <a href="tel:0634030123" class="btn">📞 Appeler</a>
+    <a href="contact.html" class="btn">✉️ Envoyer un message</a>
 
 </div>
 
+    <div>
+    <div class="card">
+
+ <h2>Prendre rdv via le formulaire</h2>
+        
+<form action="https://formsubmit.co/sophieesthetique66@gmail.com" method="POST">
+
+     <input type="hidden" name="_subject" value="Nouvelle demande de rdv">
+    
+    <!-- NOM PRENOM -->
+    <label>Nom et prénom*</label>
+    <input type="text" name="expediteur" placeholder="Votre nom et prénom" required>
+
+    <br><br>
+
+    <!-- TELEPHONE -->
+    <label>Téléphone*</label>
+    <input type="tel" name="telephone" placeholder="Votre téléphone" required>
+
+    <br><br>
+
+    <!-- EMAIL -->
+    <label>Email(facultatif)</label>
+    <input type="email" name="email" placeholder="Votre email" >
+
+    <br><br>
+
+    <!-- CATEGORIE -->
+    <label>Catégorie de soin*</label>
+    <select name="categorie" required>
+        <option value="">-- Choisir une catégorie --</option>
+        <option>Épilations</option>
+        <option>Soins visage</option>
+        <option>Soins du corps</option>
+        <option>Soins enfants</option>
+        <option>Manucure / Pédicure</option>
+        <option>Forfaits mariée</option>
+        <option>Maquillage</option>
+        <option>Maquillage permanent</option>
+        <option>Tatouages</option>
+    </select>
+
+    <br><br>
+    
+    <label>Précisez la prestation souhaitée*</label>
+<textarea name="precision" placeholder="Ex : épilation sourcils + jambes, soin visage éclat, massage relaxant…"required></textarea>
+
+    <br><br>
+
+    <!-- RECEPTION -->
+    <label>Confirmation de la préstation (facultatif)</label>
+    <select name="reception">
+        <option value="">-- Choisir --</option>
+        <option>Par SMS</option>
+        <option>Par appel</option>
+    </select>
+
+    <br><br>
+
+    <label>Vos disponibilités*</label>
+
+<textarea 
+name="disponibilites"
+placeholder="Merci d’indiquer au minimum 3 créneaux horaires souhaités. Ex : lundi 14h, mardi matin, vendredi après 17h... Les horaires demandés restent sous réserve de disponibilité.">
+</textarea>
+
+    <br><br>
+    
+    <label>Demande particulière (facultatif)</label>
+<textarea name="demande" placeholder="Ex : femme enceinte, accès difficile, demande particulière..."></textarea>
+    
+    <br><br>
+
+    <label style="display:flex; gap:10px; align-items:flex-start;">
+    <input type="checkbox" name="rgpd" required style="width:auto; margin-top:3px;">
+    <span>
+        J’accepte que mes informations soient utilisées pour traiter ma demande de prise de rdv.
+    </span>
+</label>
+    
+    <br><br>
+
+    <!-- BOUTON -->
+    <button type="submit" class="btn">
+        Envoyer ma demande
+    </button>
+
+</form>
+
+</div>
+</div>
+
+    
 </body>
 </html>
