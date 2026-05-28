@@ -77,13 +77,3 @@ nav a:hover {
 .btn:hover {
     opacity: 0.9;
 }
-
-.hero {
-    background-image: url("images/haut.jpg");
-    background-size: cover;
-    background-position: center;
-    color: white;
-    text-align: center;
-    padding: 80px 20px;
-    position: relative;
-}
