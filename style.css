@@ -154,3 +154,37 @@ form .btn {
     border: none;
     cursor: pointer;
 }
+
+/* MENU DEROULANT */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: white;
+    min-width: 220px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+    border-radius: 10px;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+
+.dropdown-content a:hover {
+    background: #f8dce5;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
