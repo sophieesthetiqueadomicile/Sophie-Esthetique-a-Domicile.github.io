@@ -1,113 +1,142 @@
-export default function SophieEsthetiqueSite() {
-  return (
-    <div className="min-h-screen bg-pink-50 text-gray-800 font-sans">
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Sophie Esthétique à Domicile</title>
 
-      {/* HEADER */}
-      <header className="bg-pink-200 text-center py-16 px-6">
-        <h1 className="text-4xl md:text-5xl font-bold text-pink-800">
-          Sophie Esthétique à Domicile
-        </h1>
-        <p className="mt-4 text-lg text-pink-900">
-          Esthéticienne à domicile • Saint-Lô et alentours
-        </p>
-      </header>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fff7fb;
+      color: #333;
+    }
 
-      {/* PRESENTATION */}
-      <section className="max-w-4xl mx-auto py-12 px-6 text-center">
-        <h2 className="text-3xl font-bold text-pink-700 mb-4">Présentation</h2>
-        <p className="text-lg">
-          Sophie esthéticienne à domicile vous propose des soins de beauté personnalisés
-          directement chez vous ou en cabinet. L’objectif est de vous offrir un moment de
-          détente et de bien-être dans une ambiance douce et professionnelle.
-        </p>
-      </section>
+    header {
+      background: linear-gradient(135deg, #f48fb1, #ec407a);
+      color: white;
+      text-align: center;
+      padding: 70px 20px;
+    }
 
-      {/* SERVICES */}
-      <section className="bg-white py-12 px-6">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold text-center text-pink-700 mb-10">
-            Prestations
-          </h2>
+    header h1 {
+      margin: 0;
+      font-size: 42px;
+    }
 
-          <div className="grid md:grid-cols-2 gap-6">
-            <div className="bg-pink-50 p-6 rounded-2xl">
-              <h3 className="font-bold text-pink-800">💅 Ongles</h3>
-              <p>Semi-permanent, gel, beauté des mains</p>
-            </div>
+    header p {
+      font-size: 18px;
+      margin-top: 10px;
+    }
 
-            <div className="bg-pink-50 p-6 rounded-2xl">
-              <h3 className="font-bold text-pink-800">💄 Maquillage</h3>
-              <p>Jour, soirée, mariage</p>
-            </div>
+    section {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
+    }
 
-            <div className="bg-pink-50 p-6 rounded-2xl">
-              <h3 className="font-bold text-pink-800">✨ Épilation</h3>
-              <p>Visage et corps</p>
-            </div>
+    h2 {
+      color: #ec407a;
+      margin-bottom: 15px;
+    }
 
-            <div className="bg-pink-50 p-6 rounded-2xl">
-              <h3 className="font-bold text-pink-800">💆 Massage</h3>
-              <p>Relaxant et bien-être</p>
-            </div>
+    .card {
+      background: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
 
-            <div className="bg-pink-50 p-6 rounded-2xl md:col-span-2">
-              <h3 className="font-bold text-pink-800">✨ Maquillage semi-permanent</h3>
-              <p>Sourcils et embellissement du regard</p>
-            </div>
-          </div>
-        </div>
-      </section>
+    .services {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+    }
 
-      {/* DOMICILE */}
-      <section className="max-w-4xl mx-auto py-12 px-6 text-center">
-        <h2 className="text-3xl font-bold text-pink-700 mb-4">Cabinet & Domicile</h2>
-        <p>
-          Sophie se déplace à domicile pour votre confort et vous reçoit également en cabinet
-          à Saint-Lô.
-        </p>
-      </section>
+    .service {
+      background: #ffe4ec;
+      padding: 15px;
+      border-radius: 12px;
+    }
 
-      {/* CONTACT */}
-      <section className="bg-pink-100 py-12 px-6 text-center">
-        <h2 className="text-3xl font-bold text-pink-700 mb-6">Contact</h2>
+    .contact {
+      text-align: center;
+    }
 
-        <p className="mb-2">📞 06 34 03 01 23</p>
-        <p className="mb-2">📍 Saint-Lô</p>
+    .btn {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 20px;
+      background: #ec407a;
+      color: white;
+      text-decoration: none;
+      border-radius: 10px;
+    }
 
-        <p className="mb-6">
-          Vous pouvez appeler ou envoyer un message directement pour prendre rendez-vous.
-          La réservation en ligne sera bientôt disponible.
-        </p>
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #f3f3f3;
+      margin-top: 40px;
+      font-size: 14px;
+    }
+  </style>
+</head>
 
-        <div className="flex flex-col md:flex-row gap-4 justify-center">
-          <a
-            href="tel:0634030123"
-            className="bg-pink-600 text-white px-6 py-3 rounded-xl"
-          >
-            Appeler
-          </a>
+<body>
 
-          <a
-            href="https://facebook.com"
-            className="bg-white text-pink-700 px-6 py-3 rounded-xl"
-          >
-            Facebook
-          </a>
+<header>
+  <h1>Sophie Esthétique à Domicile</h1>
+  <p>Saint-Lô • Cabinet & domicile • Beauté & bien-être</p>
+</header>
 
-          <a
-            href="https://instagram.com/sophie_esthetique_domicile"
-            className="bg-white text-pink-700 px-6 py-3 rounded-xl"
-          >
-            Instagram
-          </a>
-        </div>
-      </section>
+<section>
 
-      {/* FOOTER */}
-      <footer className="text-center py-6 text-gray-500 text-sm">
-        © {new Date().getFullYear()} Sophie Esthétique à Domicile
-      </footer>
+  <div class="card">
+    <h2>Présentation</h2>
+    <p>
+      Sophie esthéticienne à domicile vous propose des soins de beauté personnalisés
+      directement chez vous ou en cabinet à Saint-Lô. Un moment de détente, de douceur
+      et de bien-être.
+    </p>
+  </div>
 
+  <div class="card">
+    <h2>Prestations</h2>
+
+    <div class="services">
+      <div class="service">💅 Ongles (gel, semi-permanent)</div>
+      <div class="service">💄 Maquillage</div>
+      <div class="service">✨ Maquillage mariage</div>
+      <div class="service">✨ Maquillage semi-permanent</div>
+      <div class="service">✨ Épilation</div>
+      <div class="service">💆 Massage</div>
     </div>
-  );
-}
+  </div>
+
+  <div class="card">
+    <h2>Cabinet & domicile</h2>
+    <p>
+      Sophie se déplace à domicile et vous reçoit également en cabinet à Saint-Lô.
+    </p>
+  </div>
+
+  <div class="card contact">
+    <h2>Contact</h2>
+
+    <p>📞 Appeler ou envoyer un message directement</p>
+
+    <a class="btn" href="tel:06XXXXXXXX">Appeler</a>
+    <a class="btn" href="https://facebook.com">Facebook</a>
+    <a class="btn" href="https://instagram.com/sophie_esthetique_domicile">Instagram</a>
+  </div>
+
+</section>
+
+<footer>
+  © 2026 Sophie Esthétique à Domicile
+</footer>
+
+</body>
+</html>
