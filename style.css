@@ -4,14 +4,14 @@
 body {
     margin: 0;
     font-family: "Georgia", serif;
-    background-image: url("images/fond.jpg"); /* grande image de fond */
+    background-image: url("images/fond.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
 
 /* =========================
-   BARRE DE NAVIGATION (NE CHANGE PAS)
+   BARRE DE NAVIGATION 
 ========================= */
 nav {
     background: white;
@@ -38,7 +38,7 @@ nav a:hover {
 }
 
 /* =========================
-   PETITE IMAGE EN HAUT (HERO)
+   PETITE IMAGE EN HAUT 
 ========================= */
 .hero {
     background-image: url("images/haut.jpg");
