@@ -1,69 +1,95 @@
+/* =========================
+   FOND GLOBAL (3e zone)
+========================= */
 body {
     margin: 0;
     font-family: "Georgia", serif;
-    background-image: url("images/fond1.jpg");
+    background-image: url("images/fond.jpg"); /* grande image de fond */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
 
-/* BARRE BLANCHE EN HAUT */
+/* =========================
+   BARRE DE NAVIGATION (NE CHANGE PAS)
+========================= */
 nav {
-    background: white !important;
+    background: white;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 20px 5px;
+    padding: 20px 10px;
     position: sticky;
     top: 0;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     z-index: 1000;
-
-    /* taille plus grande */
-    min-height: 80px;
-
-    /* police plus jolie */
-    font-family: "Georgia", serif;
 }
 
-/* LOGO / NOM */
-.brand {
-    font-size: 13px;
-    color: #f3b6c8;
-    font-weight: normal;
-    max-width: 20px;
-}
-
-/* LIENS */
 nav a {
     text-decoration: none;
     color: black;
     font-size: 16px;
     letter-spacing: 1px;
-    margin: 0 10px;
     font-weight: 500;
 }
 
 nav a:hover {
     color: #f3b6c8;
 }
-/* BLOCS DE TEXTE (IMPORTANT) */
+
+/* =========================
+   PETITE IMAGE EN HAUT (HERO)
+========================= */
+.hero {
+    background-image: url("images/haut.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 180px; /* petit comme demandé */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+/* filtre sombre pour lire texte */
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.35);
+}
+
+.hero h1,
+.hero p {
+    position: relative;
+    z-index: 1;
+}
+
+/* =========================
+   CONTENU (cartes blanches)
+========================= */
 .container {
     max-width: 900px;
     margin: 30px auto;
     padding: 20px;
 }
 
-/* CHAQUE BLOC BLANC */
 .card {
-    background: rgba(255,255,255,0.95);
+    background: rgba(255,255,255,0.92);
     padding: 20px;
     margin: 15px 0;
     border-radius: 15px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
-/* BOUTON */
+/* =========================
+   BOUTONS
+========================= */
 .btn {
     display: inline-block;
     padding: 10px 15px;
@@ -76,11 +102,4 @@ nav a:hover {
 
 .btn:hover {
     opacity: 0.9;
-}
-
-.hero {
-    background-image: url("images/haut.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 30px;
 }
