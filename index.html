@@ -1,142 +1,159 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>Sophie Esthétique à Domicile</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #fff7fb;
-      color: #333;
-    }
+<title>Sophie Esthétique</title>
 
-    header {
-      background: linear-gradient(135deg, #f48fb1, #ec407a);
-      color: white;
-      text-align: center;
-      padding: 70px 20px;
-    }
+<style>
 
-    header h1 {
-      margin: 0;
-      font-size: 42px;
-    }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f0f2f5; /* style Facebook */
+}
 
-    header p {
-      font-size: 18px;
-      margin-top: 10px;
-    }
+/* TOP BAR */
+.topbar {
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+}
 
-    section {
-      max-width: 900px;
-      margin: auto;
-      padding: 40px 20px;
-    }
+.logo {
+  font-weight: bold;
+  color: #e91e63;
+}
 
-    h2 {
-      color: #ec407a;
-      margin-bottom: 15px;
-    }
+/* MENU 3 POINTS */
+.menu {
+  font-size: 22px;
+  cursor: pointer;
+}
 
-    .card {
-      background: white;
-      padding: 20px;
-      margin-bottom: 20px;
-      border-radius: 15px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    }
+/* MENU DROPDOWN */
+.dropdown {
+  display: none;
+  position: absolute;
+  right: 10px;
+  top: 50px;
+  background: white;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  border-radius: 10px;
+  width: 180px;
+}
 
-    .services {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 15px;
-    }
+.dropdown a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+}
 
-    .service {
-      background: #ffe4ec;
-      padding: 15px;
-      border-radius: 12px;
-    }
+.dropdown a:hover {
+  background: #f0f0f0;
+}
 
-    .contact {
-      text-align: center;
-    }
+/* HERO */
+.hero {
+  background: linear-gradient(135deg, #ffb6c1, #f06292);
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
 
-    .btn {
-      display: inline-block;
-      margin: 10px;
-      padding: 12px 20px;
-      background: #ec407a;
-      color: white;
-      text-decoration: none;
-      border-radius: 10px;
-    }
+/* CARDS */
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
 
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #f3f3f3;
-      margin-top: 40px;
-      font-size: 14px;
-    }
-  </style>
+.card {
+  background: white;
+  margin: 15px 0;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 15px;
+  background: #e91e63;
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+</style>
+
 </head>
 
 <body>
 
-<header>
+<!-- TOP BAR -->
+<div class="topbar">
+  <div class="logo">Sophie Esthétique</div>
+  <div class="menu" onclick="toggleMenu()">⋯</div>
+
+  <div class="dropdown" id="menu">
+    <a href="#services">Prestations</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">À propos</a>
+  </div>
+</div>
+
+<!-- HERO -->
+<div class="hero">
   <h1>Sophie Esthétique à Domicile</h1>
-  <p>Saint-Lô • Cabinet & domicile • Beauté & bien-être</p>
-</header>
+  <p>Saint-Lô • Cabinet & domicile</p>
+</div>
 
-<section>
+<!-- CONTENT -->
+<div class="container">
 
-  <div class="card">
-    <h2>Présentation</h2>
+  <div class="card" id="about">
+    <h2>À propos</h2>
     <p>
-      Sophie esthéticienne à domicile vous propose des soins de beauté personnalisés
-      directement chez vous ou en cabinet à Saint-Lô. Un moment de détente, de douceur
-      et de bien-être.
+      Esthéticienne à domicile à Saint-Lô, Sophie vous propose des soins de beauté
+      personnalisés dans une ambiance douce et professionnelle.
     </p>
   </div>
 
-  <div class="card">
+  <div class="card" id="services">
     <h2>Prestations</h2>
-
-    <div class="services">
-      <div class="service">💅 Ongles (gel, semi-permanent)</div>
-      <div class="service">💄 Maquillage</div>
-      <div class="service">✨ Maquillage mariage</div>
-      <div class="service">✨ Maquillage semi-permanent</div>
-      <div class="service">✨ Épilation</div>
-      <div class="service">💆 Massage</div>
-    </div>
+    <p>💅 Ongles • 💄 Maquillage • ✨ Mariage • ✨ Semi-permanent • ✨ Épilation • 💆 Massage</p>
   </div>
 
-  <div class="card">
-    <h2>Cabinet & domicile</h2>
-    <p>
-      Sophie se déplace à domicile et vous reçoit également en cabinet à Saint-Lô.
-    </p>
-  </div>
-
-  <div class="card contact">
+  <div class="card" id="contact">
     <h2>Contact</h2>
 
-    <p>📞 Appeler ou envoyer un message directement</p>
+    <p>📞 0634030123</p>
 
-    <a class="btn" href="tel:06XXXXXXXX">Appeler</a>
-    <a class="btn" href="https://facebook.com">Facebook</a>
+    <a class="btn" href="tel:0634030123">Appeler</a>
     <a class="btn" href="https://instagram.com/sophie_esthetique_domicile">Instagram</a>
   </div>
 
-</section>
+</div>
 
-<footer>
-  © 2026 Sophie Esthétique à Domicile
-</footer>
+<script>
+function toggleMenu() {
+  var menu = document.getElementById("menu");
+  if(menu.style.display === "block") {
+    menu.style.display = "none";
+  } else {
+    menu.style.display = "block";
+  }
+}
+</script>
 
 </body>
 </html>
