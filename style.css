@@ -103,3 +103,8 @@ nav a:hover {
 .btn:hover {
     opacity: 0.9;
 }
+
+/* TARIFS ALIGNÉS */
+.tarifs p {
+    font-family: monospace;
+}
