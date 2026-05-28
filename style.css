@@ -108,3 +108,49 @@ nav a:hover {
 .tarifs p {
     font-family: monospace;
 }
+
+
+FORME CARTE CADEAU
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-family: var(--font, Georgia, serif);
+}
+
+label {
+    font-weight: 600;
+    margin-top: 10px;
+    color: #333;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 14px;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    font-size: 15px;
+    font-family: inherit;
+    background: rgba(255,255,255,0.95);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border: 1px solid #f3b6c8;
+    box-shadow: 0 0 0 3px rgba(243,182,200,0.3);
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+form .btn {
+    margin-top: 15px;
+    padding: 14px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
