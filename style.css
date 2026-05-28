@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-image: url("fond1.jpg");
+    background-image: url("images/fond1.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -79,7 +79,7 @@ nav a:hover {
 }
 
 .hero {
-    background-image: url("haut.jpg");
+    background-image: url("images/haut.jpg");
     background-size: cover;
     background-position: center;
     color: white;
