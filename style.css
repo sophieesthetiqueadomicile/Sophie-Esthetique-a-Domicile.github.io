@@ -4,7 +4,7 @@
 body {
     margin: 0;
     font-family: "Georgia", serif;
-    background-image: url("images/fond.jpg");
+    background-image: url("fond1.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -41,10 +41,10 @@ nav a:hover {
    PETITE IMAGE EN HAUT 
 ========================= */
 .hero {
-    background-image: url("images/haut.jpg");
+    background-image: url("haut.jpg");
     background-size: cover;
     background-position: center;
-    height: 180px; /* petit comme demandé */
+    height: 180px; 
     display: flex;
     justify-content: center;
     align-items: center;
