@@ -299,7 +299,7 @@ html {
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     text-decoration: none;
     color: black;
-    transition: transform 0.2s ease;
+    transition: transform 0.3s ease;
 }
 
 /* IMAGE */
@@ -336,11 +336,13 @@ html {
     padding: 20px;
     border-radius: 15px;
     margin-bottom: 20px;
+    max-width: 900px;
+    margin: 0 auto 20px auto;
 }
 
 .intro-img {
-    width: 200px;
-    height: 150px;
+    width: 220px;
+    height: 170px;
     object-fit: cover;
     border-radius: 12px;
 }
@@ -368,5 +370,8 @@ html {
 
 .tarifs p {
     text-align: center;
+   margin: 6px 0;
+    letter-spacing: 0.3px;
+   font-size: 14px;
     font-family: inherit; /* si tu avais monospace, ça l’enlève */
 }
