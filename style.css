@@ -1,3 +1,8 @@
+* {
+    box-sizing: border-box;
+}
+
+
 /* =========================
    FOND GLOBAL (3e zone)
 ========================= */
@@ -361,46 +366,20 @@ html {
 
 @media (max-width: 768px) {
 
-    .intro-img {
-        width: 100%;
-        max-width: 100%;
-        height: 180px;
-        object-fit: cover;
-    }
-
-    .card {
-        margin: 15px auto;
-    max-width: 95%;
-    width: 100%;
-    }
-
-    /* ACCUEIL + PRESTATIONS */
-    .cards-grid {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .mini-card {
-        width: 90%;
-        max-width: 320px;
-    }
-
-    /* INTRO */
-    .intro-service {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    /* NAV */
+    /* NAVIGATION */
     nav {
         flex-direction: column;
         gap: 10px;
     }
 
+    nav a {
+        font-size: 14px;
+    }
+
     /* HERO */
     .hero {
         height: 120px;
+        text-align: center;
     }
 
     .hero h1 {
@@ -411,8 +390,36 @@ html {
         font-size: 12px;
     }
 
-    nav a {
-        font-size: 14px;
+    /* CARTES (IMPORTANT POUR ACCUEIL + RDV) */
+    .container {
+        padding: 10px;
+    }
+
+    .card {
+        width: 95%;
+        margin: 15px auto;
+    }
+
+    /* PRESTATIONS (grille) */
+    .cards-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mini-card {
+        width: 90%;
+        max-width: 320px;
+    }
+
+    /* INTRO SERVICES */
+    .intro-service {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .intro-img {
+        width: 100%;
+        height: 180px;
     }
 }
 
@@ -428,9 +435,6 @@ html {
     font-family: inherit; /* si tu avais monospace, ça l’enlève */
 }
 
-* {
-    box-sizing: border-box;
-}
 
 .card.tarifs p {
     display: block;
