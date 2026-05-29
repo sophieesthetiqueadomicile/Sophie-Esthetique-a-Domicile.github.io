@@ -391,10 +391,16 @@ html {
 
     /* CARTES (IMPORTANT POUR ACCUEIL + RDV) */
     .container {
-        padding: 10px;
+         width: 95%;
+        margin: 15px auto;
     }
 
     .card {
+        width: 95%;
+        margin: 15px auto;
+    }
+
+    .card tarif }
         width: 95%;
         margin: 15px auto;
     }
@@ -421,11 +427,6 @@ html {
         height: 180px;
     }
 
-    .container {
-    width: 100%;
-    padding: 10px;
-    margin: 0 auto;
-    }
     
 }
 
