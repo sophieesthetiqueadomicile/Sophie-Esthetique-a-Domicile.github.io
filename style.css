@@ -340,7 +340,8 @@ html {
 
 .intro-img {
     width: 50%;
-    height: 350px;
+    height: auto;
+   max-height: 350px;
     object-fit: cover;
     border-radius: 12px;
 }
