@@ -260,7 +260,9 @@ form .btn {
 }
 
 .footer-bottom {
-    margin-top: 20px;
-    font-size: 14px;
-    opacity: 0.9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
 }
