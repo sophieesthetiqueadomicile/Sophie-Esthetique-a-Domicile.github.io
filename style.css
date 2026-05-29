@@ -400,10 +400,12 @@ html {
         margin: 15px auto;
     }
 
-    .card tarif }
-        width: 95%;
-        margin: 15px auto;
-    }
+   .card.tarifs {
+    width: 95%;
+    max-width: 600px;
+    margin: 15px auto;
+    display: block;
+}
 
     /* PRESTATIONS (grille) */
     .cards-grid {
