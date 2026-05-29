@@ -275,4 +275,9 @@ form .btn {
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 100px; /* ajuste selon la hauteur de ta navbar */
+}
+
+.card {
+    scroll-margin-top: 100px;
 }
