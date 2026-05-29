@@ -187,4 +187,44 @@ form .btn {
     display: block;
 }
 
+body {
+    font-family: Georgia, serif;
+}
+
+/* CONTENEUR PAGES LÉGALES */
+.legal-container {
+    background: white;
+    max-width: 950px;
+    margin: 40px auto;
+    padding: 40px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+    border-radius: 8px;
+}
+
+/* TITRE PRINCIPAL */
+.legal-title {
+    border: 2px solid black;
+    padding: 10px 15px;
+    display: inline-block;
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+
+/* SOUS TITRES */
+.legal-container h2 {
+    margin-top: 25px;
+    font-size: 18px;
+}
+
+/* TEXTE */
+.legal-container p,
+.legal-container li {
+    color: #333;
+    line-height: 1.7;
+}
+
+/* LISTES */
+.legal-container ul {
+    padding-left: 20px;
+}
 
