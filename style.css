@@ -85,6 +85,7 @@ nav a:hover {
     margin: 15px 0;
     border-radius: 15px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    scroll-margin-top: 100px;
 }
 
 /* =========================
@@ -278,9 +279,6 @@ html {
     scroll-padding-top: 100px; /* ajuste selon la hauteur de ta navbar */
 }
 
-.card {
-    scroll-margin-top: 100px;
-}
 
 /* CONTENEUR DES CARTES */
 .cards-grid {
