@@ -360,17 +360,21 @@ html {
 }
 
 @media (max-width: 768px) {
-  
 
     .intro-img {
         width: 100%;
-       max-width: 100%;
-        height: 200px;
+        max-width: 100%;
+        height: 180px;
+        object-fit: cover;
     }
-   .card {
-        margin: 15px;
-        max-width: none;
-   /* ACCUEIL + PRESTATIONS */
+
+    .card {
+        margin: 15px auto;
+    max-width: 95%;
+    width: 100%;
+    }
+
+    /* ACCUEIL + PRESTATIONS */
     .cards-grid {
         display: flex;
         flex-direction: column;
@@ -382,16 +386,10 @@ html {
         max-width: 320px;
     }
 
-    /* INTRO (épilation, mariage etc) */
+    /* INTRO */
     .intro-service {
         flex-direction: column;
         text-align: center;
-    }
-
-    .intro-img {
-        width: 100%;
-        height: 180px;
-        object-fit: cover;
     }
 
     /* NAV */
@@ -416,8 +414,6 @@ html {
     nav a {
         font-size: 14px;
     }
-  
-
 }
 
 .intro-text {
@@ -434,4 +430,10 @@ html {
 
 * {
     box-sizing: border-box;
+}
+
+.card.tarifs p {
+    display: block;
+    max-width: 600px;
+    margin: 6px auto;
 }
